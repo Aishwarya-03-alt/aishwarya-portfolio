@@ -1,0 +1,12 @@
+$(document).ready(function(){
+  $('#demo-btn').click(function(){
+    $('#demo-box').animate({
+      width:'200px',height:'200px',opacity:0.7
+    },700,function(){
+      $(this).css('background','#2255aa');
+    });
+  });
+  $('#demo-reset').click(function(){
+    $('#demo-box').stop(true).css({width:'100px',height:'100px',opacity:1,background:'#1e90ff'});
+  });
+});
